@@ -1,0 +1,218 @@
+@import url(reset.css);
+html,
+body,
+.quan {
+  width: 100%;
+  height: 100%;
+  background: 0;
+  overflow: hidden;
+}
+html {
+  font-size: 62.5%;
+}
+.quan {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.quan .wrap {
+  width: 100%;
+  height: auto;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-flex: 1;
+  overflow: hidden;
+}
+.quan .wrap .wrap1 {
+  width: 100%;
+  height: auto;
+  background: none;
+  background-image:url(../img/50n58PICGNR_1024.jpg);
+  background-size: 100% 100% ;
+}
+.quan .wrap .wrap1 section {
+  -webkit-box-flex: 1;
+  overflow: auto;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.quan .wrap .wrap1 section .ai {
+  width: 100%;
+  height: 4rem;
+  background: none;
+  overflow-x: auto;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.quan .wrap .wrap1 section .ai::-webkit-scrollbar {
+  width: 0;
+}
+.quan .wrap .wrap1 section .ai span {
+  margin-left: 3px;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  font-size: 30px;
+}
+.quan .wrap .wrap1 section .over{
+	overflow: auto;
+	-webkit-box-flex: 1;
+}
+.quan .wrap .wrap1 section .center {
+  width: 100%;
+  height: auto;
+  background: none;
+  text-align: center;
+}
+.quan .wrap .wrap1 section .center ul {
+  width: 100%;
+  height: 22rem;
+  background: none;
+  overflow-x: auto;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.quan .wrap .wrap1 section .center ul::-webkit-scrollbar {
+  width: 0;
+}
+.quan .wrap .wrap1 section .center ul li {
+  width: 150px;
+  height: 20rem;
+  background: none;
+}
+.quan .wrap .wrap1 section .center ul li img {
+  width: 200px;
+  height: 20rem;
+  background: none;
+}
+.quan .wrap .wrap1 section .bbb {
+  text-align: center;
+  margin-top: 30px;
+}
+.quan .wrap .wrap1 section .bbb img {
+  width: auto;
+  height: 15rem;
+  background: none;
+}
+.quan .wrap .wrap2 {
+  width: 100%;
+  height: auto;
+  background: none;
+  background-image:url(../img/bizhi1.jpg);
+  background-size: 100% 100% ;
+}
+.quan .wrap .wrap2 div {
+ padding-top: 10px;
+}
+.quan .wrap .wrap2 div p{
+
+	width: 80%;
+	margin-left: 10%;
+	font-size: 20px;
+  color: lightpink;
+  box-sizing: border-box;
+}
+.quan .wrap .wrap2 .text{
+	margin-top: 20%;
+	box-sizing: border-box;
+}
+.quan .wrap .wrap3 {
+  width: 100%;
+  height: auto;
+  background: none;
+  background-image: url(../img/432324.jpg);}
+.quan .wrap .wrap3 section {
+  -webkit-box-flex: 1;
+  overflow: auto;
+  background: #f2f2f2;
+}
+.quan .wrap .wrap3 section::-webkit-scrollbar {
+  width: 0;
+}
+.quan .wrap .wrap3 section img {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+.quan .wrap .wrap4 {
+  width: 100%;
+  height: auto;
+  background: none;
+  background-image:url(../imges/3.jpg);
+  background-size: 100% 100% ;
+}
+.quan .wrap .wrap4 .wrap4_text .wrap4_text_p{
+	font-size: 18px;
+	color: deepskyblue;
+}
+.quan .wrap .wrap4 section {
+  font-size: 100px;
+  color: red;
+}
+.quan .wrap .wrap5 {
+  width: 100%;
+  height: auto;
+  background: none;
+ background:url(../img/bizhi2.jpg) no-repeat;
+ background-size: 100%;
+}
+.quan .wrap .wrap5 section {
+  -webkit-box-flex: 1;
+  overflow: auto;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+.quan .wrap .wrap5 section::-webkit-scrollbar {
+  width: 0;
+}
+.quan .wrap .wrap5 section h4 {
+  font-size: 10rem;
+}
+.quan .wrap .wrap5 section h2 {
+  font-size: 210px;
+  color: red;
+  margin-right: 50px;
+}
+.quan .wrap .wrap5 section h3 {
+  position: absolute;
+  top: 3%;
+  left: 38%;
+  color: red;
+  font-size: 210px;
+}
+.quan .wrap .wrap5 section h1 {
+	padding-top: 10%;
+  font-size: 20px;
+  color:mediumspringgreen;
+  box-sizing: border-box;
+}
+.quan .wrap .wrap5 section h5 {
+  font-size: 25px;
+  color: skyblue;
+  padding-top: 10%;
+  box-sizing: border-box;
+}
+.quan footer {
+  width: 100%;
+  height: 5.1rem;
+  background: #ebf0f6;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  text-align: center;
+  border-top: 1px solid #acadb2;
+}
+.quan footer .kkk dd {
+  color: orange;
+}
+.quan footer dl {
+  -webkit-box-flex: 1;
+  padding-top: 2px;
+  box-sizing: border-box;
+}
+.quan footer dl img {
+	border-radius: 70%;
+  width: auto;
+  height: 3.4rem;
+  background: none;
+}

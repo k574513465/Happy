@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+  <link rel="stylesheet" type="text/css" href="css/jinxiao.css"/>
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+    <script src="js/jquery-3.1.1.js"></script>
+</head>
+<style type="text/css">
+        *{
+            margin: 0; 
+            padding: 0;
+        }
+        .app{
+            width: 100%;
+            height: 100%;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+            .warp {
+                width: 200px;
+                height: 200px; 
+                margin: 100px auto;            
+                position: relative;
+                -webkit-transform: rotateX(45deg) rotateY(45deg);
+                -webkit-transform-style: preserve-3d;
+                -webkit-animation: change 6s linear infinite;
+            }
+            
+            @-webkit-keyframes change {
+                0% {
+                    -webkit-transform: rotateX(45deg) rotateY(45deg);
+                }
+                33% {
+                    -webkit-transform:  rotateX(120deg) rotateY(120deg);
+                }
+                66% {
+                    -webkit-transform:  rotateX(240deg) rotateY(240deg);
+                }
+                100% {
+                    -webkit-transform:  rotateX(360deg) rotateY(360deg);
+                }
+            }
+            
+            .warp>div {
+                width: 200px;
+                height: 200px;
+                border: 1px solid #FFFFFF;               
+                overflow: hidden;
+              img{
+              	width: 200px;
+                height: 200px;
+              }
+            }
+            
+            img {
+                width: 100%;
+                height: auto;
+            }
+                 .top {
+                position: absolute;
+                -webkit-transform:translateZ(100px) ;
+            }
+           
+            .donw {
+                position: absolute;
+                left: 0px;
+                top: -100px;
+                -webkit-transform: rotateX(90deg);
+            }
+           
+            .left {
+                position: absolute;
+                left: 100px;
+                top: 0px;
+                -webkit-transform: rotateY(90deg);
+            }
+          
+            .right {
+                position: absolute;
+                left: -100px;
+             
+                -webkit-transform: rotateY(90deg);
+            }
+            
+            .asi {
+                position: absolute;
+                left: 0;
+                top: 100px;
+                -webkit-transform: rotateX(90deg);
+            }
+            
+            .fot {
+                position: absolute;
+                -webkit-transform:translateZ(-100px) ;
+            }
+           .bbb{
+			-webkit-animation:bounceIn 1s .2s ease both;
+			-moz-animation:bounceIn 1s .2s ease both;}
+	@-webkit-keyframes bounceIn {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(.3)
+	}
+	50% {
+		opacity: 1;
+		-webkit-transform: scale(1.05)
+	}
+	70% {
+		-webkit-transform: scale(.9)
+	}
+	100% {
+		-webkit-transform: scale(1)
+	}
+}
+
+@-moz-keyframes bounceIn {
+	0% {
+		opacity: 0;
+		-moz-transform: scale(.3)
+	}
+	50% {
+		opacity: 1;
+		-moz-transform: scale(1.05)
+	}
+	70% {
+		-moz-transform: scale(.9)
+	}
+	100% {
+		-moz-transform: scale(1)
+	}
+}
+     .center{
+     	-webkit-animation:rotateIn 1s .2s ease both;
+-moz-animation:rotateIn 1s .2s ease both;}
+@-webkit-keyframes rotateIn{
+0%{-webkit-transform-origin:center center;
+-webkit-transform:rotate(-200deg);
+opacity:0}
+100%{-webkit-transform-origin:center center;
+-webkit-transform:rotate(0);
+opacity:1}
+}
+@-moz-keyframes rotateIn{
+0%{-moz-transform-origin:center center;
+-moz-transform:rotate(-200deg);
+opacity:0}
+100%{-moz-transform-origin:center center;
+-moz-transform:rotate(0);
+opacity:1}
+}
+      .wrap2{-webkit-animation:bounceInDown 1s .2s ease both;
+-moz-animation:bounceInDown 1s .2s ease both;}
+@-webkit-keyframes bounceInDown{
+0%{opacity:0;
+-webkit-transform:translateY(-2000px)}
+60%{opacity:1;
+-webkit-transform:translateY(30px)}
+80%{-webkit-transform:translateY(-10px)}
+100%{-webkit-transform:translateY(0)}
+}
+@-moz-keyframes bounceInDown{
+0%{opacity:0;
+-moz-transform:translateY(-2000px)}
+60%{opacity:1;
+-moz-transform:translateY(30px)}
+80%{-moz-transform:translateY(-10px)}
+100%{-moz-transform:translateY(0)}
+      }
+      
+      .wrap3{
+-webkit-animation:rotateInUpRight 1s .2s ease both;
+-moz-animation:rotateInUpRight 1s .2s ease both;}
+@-webkit-keyframes rotateInUpRight{
+0%{-webkit-transform-origin:right bottom;
+-webkit-transform:rotate(-90deg);
+opacity:0}
+100%{-webkit-transform-origin:right bottom;
+-webkit-transform:rotate(0);
+opacity:1}
+}
+@-moz-keyframes rotateInUpRight{
+0%{-moz-transform-origin:right bottom;
+-moz-transform:rotate(-90deg);
+opacity:0}
+100%{-moz-transform-origin:right bottom;
+-moz-transform:rotate(0);
+opacity:1}
+}
+      
+  </style>
+<body>
+	<div class="quan">
+		<div class="wrap">
+			<div class="wrap1">
+				<section>
+					<div class="ai">
+						<marquee><span style="color: darkmagenta;">♥</span><span style="color:red ;">♥</span><span style="color:chartreuse ;">♥</span><span style="color:hotpink ;">♥</span><span style="color:pink ;">久伴不离不弃。</span><span style="color:lawngreen ;">♥</span><span style="color:azure ;">♥</span><span style="color: darkorange;">亲爱的生日快乐！♥</span><span style="color:aqua ;">♥</span><span style="color:wheat ;">♥</span><span style="color: aquamarine;">♥</span><span style="color: darkmagenta;">♥</span><span style="color:red ;">♥</span><span style="color:chartreuse ;">♥</span><span style="color:hotpink ;">♥</span><span style="color:pink ;">♥</span><span style="color:lawngreen ;">♥</span><span style="color:azure ;">♥</span><span style="color: darkorange;">♥</span><span style="color:aqua ;">♥</span><span style="color:wheat ;">♥</span><span style="color: aquamarine;">♥</span><span style="color: darkmagenta;">♥</span><span style="color:red ;">♥</span><span style="color:chartreuse ;">♥</span><span style="color:hotpink ;">♥</span><span style="color:pink ;">♥</span><span style="color:lawngreen ;">♥</span><span style="color:azure ;">♥</span><span style="color: darkorange;">♥</span></marquee>
+					</div>
+					<div class="over">
+					<div class="center">
+						<ul>
+							<li><img src="imges/3.jpg"/></li>
+							<li><img src="img/11111.jpg"/></li>
+							<li><img src="img/22.jpg"/></li>
+							<li><img src="img/2222.jpg"/></li>
+							<li><img src="imges/1.jpg"/></li>
+							<li><img src="img/333.jpg"/></li>
+							<li><img src="imges/2.jpg"/></li>
+							<li><img src="img/44444.jpg"/></li>
+							<li><img src="img/444.jpg"/></li>
+							<li><img src="img/55555.jpg"/></li>
+							<li><img src="img/QQ20170329081648.jpg"/></li>
+							<li><img src="img/QQ20170329081547.jpg"/></li>
+							<li><img src="img/xxx.jpg"/></li>
+							<li><img src="img/tongxue.jpg"/></li>
+							<li><img src="img/cccc (1).jpg"/></li>
+							<li><img src="img/didi (1).jpg"/></li>
+							<li><img src="img/dddd.jpg"/></li>
+							<li><img src="img/mei.jpg"/></li>
+						</ul>
+					</div>
+					<div class="bot">
+						<marquee style="font-size: 20px;"><span style="color: salmon;">如果</span><span style="color: hotpink;">我们</span><span style="color: darkmagenta;">一直</span><span style="color: khaki;">这样</span><span style="color: lawngreen;">下去</span><span style="color: tomato;">开心一辈子，</span><span style="color: navajowhite;">你愿意吗？ 吴瑶瑶的小公举。</span></marquee>
+					</div>
+					<div class="bbb">
+						<audio controls="controls" autoplay="autoplay" style="width: 50%; border-radius:30px ;" >
+							<source src="img/fcml.mp3"></source>
+						</audio>
+						<img src="imges/QQ20170328101242.jpg"/>
+					</div>
+				</div>
+				</section>
+			</div>
+			<div class="wrap2">
+				<div>
+				<!--<audio src="img/fcml.mp3" controls=controls ></audio>-->
+				<p>1.世界上有一个人，不见面的时候会一直惦记着他，见面时却又脸红心跳，什么话都说不出口。他总是轻易地把你心揪住，让你无法忘怀，也能让你胡思乱想睡不好觉，但你仍然甘之如饴，因为你爱他。他是你最甜蜜，最甜蜜的负荷。这个人，叫做恋人。</p>
+	           </div>
+	           <div class="text">
+	           	<p style="color:hotpink;">2.爱情本就是相互的，没有谁对谁错。只是看你爱的人愿不愿意珍惜你。如果我们之间有100步，你只需要走向前1步，剩余的99步我都会去把它走完。么么哒</p>
+	           </div>
+	           <div class="aa">
+	           
+	           </div>
+	           
+			</div>
+			<div class="wrap3">
+				<section>
+					<div class="swiper-container">
+				        <div class="swiper-wrapper">
+				        	<div class="swiper-slide"><img src="imges/QQ20170328101220.jpg"/></div>
+				        	<div class="swiper-slide"><img src="imges/QQ20170328101220.jpg"/></div>
+				        	<div class="swiper-slide"><img src="imges/QQ20170328101229.jpg"/></div>
+				       		<div class="swiper-slide"><img src="imges/QQ20170328101235.jpg"/></div>
+				       		<div class="swiper-slide"><img src="imges/QQ20170328101242.jpg"/></div>
+				       		<div class="swiper-slide"><img src="imges/QQ20170328100936.jpg"/></div>
+				            <div class="swiper-slide"><img src="imges/QQ20170328101252.jpg"/></div>
+				            <div class="swiper-slide"><img src="imges/QQ20170328101302.jpg"/></div>
+				            <div class="swiper-slide"><img src="imges/QQ20170328101312.jpg"/></div>
+				            <div class="swiper-slide"><img src="imges/QQ20170328101334.jpg"/></div>
+				            <div class="swiper-slide"><img src="imges/QQ20170328101338.jpg"/></div>
+	     					<div class="swiper-slide"><img src="imges/QQ20170328101411.jpg"/></div>
+				        </div>
+				    </div>
+				</section>
+			</div>
+			<div class="wrap4">
+				<section>
+					<div class="app">
+			        	<div class="warp">
+			            <div class="top"><img src="imges/QQ20170328101213.jpg"/></div>
+			            <div class="donw"><img src="imges/QQ20170328101220.jpg"/></div>
+			            <div class="left"><img src="imges/QQ20170328101220.jpg"/></div>
+			            <div class="right"><img src="imges/QQ20170328101235.jpg"/></div>
+			            <div class="fot"><img src="imges/QQ20170328101229.jpg"/></div>
+			            <div class="asi"><img src="imges/QQ20170328101359.jpg"/></div>
+             </div>
+             	<div class="wrap4_text">
+             		<p class="wrap4_text_p">猪乐乐,生日快乐。愿我们一生不离不弃，我会永远待你如初。love 乐。</p>	
+             	</div>
+        </div>
+				</section>
+			</div>
+			<div class="wrap5">
+				<section>
+					<!--<h4 style="color: orange;"></h4>
+					<h4 style="color: greenyellow;"></h4>-->
+					<h2>♥</h2>
+					<h3>♥</h3>
+					<div>
+						<h5>我最爱最爱的女神乐乐大人</h5>
+					<h1>和你在一起这么久了，我们很少吵架，彼此很珍惜彼此。当然我很爱你啦，目标明确娶你回家。么么哒  一生挚爱！</h1>
+					</div>
+				</section>
+			</div>
+		</div>
+		<footer>
+			<dl class="kkk">
+				<dt><img src="imges/QQ20170328101229.jpg"/></dt>
+				<dd>我要陪你</dd>
+			</dl>
+			<dl>
+				<dt><img src="imges/QQ20170328101220.jpg"/></dt>
+				<dd>吃到老</dd>
+			</dl>
+			<dl>
+				<dt><img src="imges/QQ20170328101213.jpg"/></dt>
+				<dd>玩到老</dd>
+			</dl>
+			<dl>
+				<dt><img src="imges/QQ20170328101235.jpg"/></dt>
+				<dd>白头到老</dd>
+			</dl>
+			<dl>
+				<dt><img src="imges/QQ20170328101242.jpg"/></dt>
+				<dd>一生一世</dd>
+			</dl>
+		</footer>
+	</div>
+</body>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript">
+	$(".quan footer dl").click(function(){
+		var index = $(this).index();
+//		console.log(index)
+		$(this).addClass("kkk").siblings().removeClass("kkk");
+    		$(".quan .wrap>div").hide().eq(index).show();
+		
+	})
+   	var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+//      spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 1500,
+        loop:true,
+        autoplayDisableOnInteraction: false
+    });	
+    </script>
+    
+    <script>
+    var b = document.body;
+    var c = document.getElementsByTagName('canvas')[0];
+    var a = c.getContext('2d');
+    document.body.clientWidth;
+</script>
+<script>
+
+with(m=Math)C=cos,S=sin,P=pow,R=random;c.width=c.height=f=400;h=-200;function p(a,b,c){if(c>60)return[S(a*7)*(13+5/(.2+P(b*4,4)))-S(b)*50,b*f+50,625+C(a*7)*(13+5/(.2+P(b*4,4)))+b*200,a*1-b/2,a];A=a*2-1;B=b*2-1;if(A*A+B*B<1){if(c>37){n=(j=c&1)?6:4;o=.5/(a+.01)+C(b*125)*3-a*300;w=b*h;return[o*C(n)+w*S(n)+j*610-390,o*S(n)-w*C(n)+550-j*350,1180+C(B+A)*99-j*300,.4-a*.1+P(1-B*B,-h*6)*.15-a*b*.4+C(a+b)/5+P(C((o*(a+1)+(B>0?w:-w))/25),30)*.1*(1-B*B),o/1e3+.7-o*w*3e-6]}if(c>32){c=c*1.16-.15;o=a*45-20;w=b*b*h;z=o*S(c)+w*C(c)+620;return[o*C(c)-w*S(c),28+C(B*.5)*99-b*b*b*60-z/2-h,z,(b*b*.3+P((1-(A*A)),7)*.15+.3)*b,b*.7]}o=A*(2-b)*(80-c*2);w=99-C(A)*120-C(b)*(-h-c*4.9)+C(P(1-b,7))*50+c*2;z=o*S(c)+w*C(c)+700;return[o*C(c)-w*S(c),B*99-C(P(b, 7))*50-c/3-z/1.35+450,z,(1-b/1.2)*.9+a*.1, P((1-b),20)/4+.05]}}setInterval('for(i=0;i<1e4;i++)if(s=p(R(),R(),i%46/.74)){z=s[2];x=~~(s[0]*f/z-h);y=~~(s[1]*f/z-h);if(!m[q=y*f+x]|m[q]>z)m[q]=z,a.fillStyle="rgb("+~(s[3]*h)+","+~(s[4]*h)+","+~(s[3]*s[3]*-80)+")",a.fillRect(x,y,1,1)}',0)
+
+</script>
+</html>

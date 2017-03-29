@@ -1,0 +1,158 @@
+@import url(reset.css);
+.full(@w,@h,@bg){
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@ver){
+    display: -webkit-box;
+    -webkit-box-orient: @ver ;
+}
+html,body,.quan{
+    .full(100%,100%,0);
+}
+html{
+    font-size: 62.5%;
+}
+.quan{
+    .box(vertical);
+    .wrap{
+        .full(100%,auto,none);
+        .box(horizontal);
+         -webkit-box-flex: 1;
+         overflow: hidden;
+         .wrap1{
+             .full(100%,auto,none);
+             background-image:url(../img/ssdd.gif);
+             background-size:100% 100% ;
+             section{
+                 -webkit-box-flex: 1;
+                 overflow: auto;
+                 .box(vertical);
+             
+             .ai{
+                 .full(100%,4rem,none);
+                  overflow-x: auto;
+                     .box(horizontal);
+                     &::-webkit-scrollbar{width: 0;}
+                 span{
+                     margin-left: 3px;
+                     padding: 10px 10px;
+                     box-sizing: border-box;
+                     font-size: 30px;
+                 }
+             }
+             .center{
+                 .full(100%,auto,none);
+                 text-align: center;
+                 ul{
+                     .full(100%,22rem,none);
+                     overflow-x: auto;
+                     .box(horizontal);
+                     &::-webkit-scrollbar{width: 0;}
+                     li{
+//                       -webkit-box-flex:1 ;
+                         .full(150px,20rem,none);
+                         img{
+                             .full(150px,20rem,none);
+                         }
+                     }
+                 }
+             }
+             .bbb{
+//               margin: 0 auto;
+                    text-align: center;
+                    margin-top: 30px;
+                    img{
+                        .full(auto,15rem,none)
+                    }
+             }
+             }
+         }
+         .wrap2{
+             .full(100%,auto,none);
+             background-image:url(../img/432324.jpg) ;
+             background-size:100% 100% ;
+             div{
+                 text-align: center;
+                font-size: 14px;
+                color: darkred;
+             }
+         }
+         .wrap3{
+             .full(100%,auto,none);
+             section{
+                  -webkit-box-flex: 1;
+                   overflow: auto;
+                   &::-webkit-scrollbar{width: 0;}
+                   background: #f2f2f2;
+                   img{
+                       .full(100%,100%,none);
+                   }
+             }
+         }
+         .wrap4{
+             .full(100%,auto,none);
+              background-image:url(../img/ssdd.gif);
+             background-size:100% 100% ;
+             section{
+                 font-size: 100px;
+                 color: red;
+                 
+             }
+         }
+         .wrap5{
+             .full(100%,auto,none);
+            
+             section{
+                 -webkit-box-flex: 1;
+                 overflow: auto;
+                 &::-webkit-scrollbar{width: 0;}
+                 text-align: center;
+                 padding-top: 10px;
+                 box-sizing: border-box;
+                 position: relative;
+                 h4{
+                     font-size: 10rem;
+                 }
+                 h2{
+                     font-size: 210px;
+                     color: red;
+                     margin-right: 50px;
+                 }
+                 h3{
+                     position: absolute;
+                     top: 3%;
+                     left: 38%;
+                     color: red;
+                      font-size: 210px;
+                 }
+                 h1{
+                     font-size: 20px;
+                     color: salmon;
+                 }
+                 h5{
+                     font-size: 25px;
+                     color: fuchsia;
+                 }
+             }
+         }
+    }
+    footer{
+        .full(100%,5.1rem,#ebf0f6);
+        .box(horizontal);
+        text-align: center;
+        border-top: 1px solid #acadb2;
+        .kkk{
+            dd{
+                color: orange;
+            }
+        }
+        dl {
+            -webkit-box-flex: 1;
+            img {
+                .full(auto,3.4rem,none);
+            }
+        }
+    }
+}
